@@ -8,4 +8,4 @@ You may propose changes to the script but I only accept those that I consider us
 
 # Better-Fedora
 
-[Click here to view cheatsheet](Resources/Better-Fedora.sh)
+[Click here to view script](Resources/Better-Fedora.sh)

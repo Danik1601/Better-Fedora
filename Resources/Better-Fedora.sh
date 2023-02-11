@@ -74,6 +74,7 @@ case $ID in
    ;;
 
    ubuntu)
+      echo "$NAME detected"
       echo "I express you my deepest condolences"
       echo "This script will be terminated."
       read

@@ -205,6 +205,15 @@ if [ $? -eq 0 ];
       echo "[✗] FAIL"
 fi
 
+# Set up templates
+touch ~/Templates/new.txt
+if [ $? -eq 0 ];
+   then
+      echo "[✓] SUCCESS"
+   else
+      echo "[✗] FAIL"
+fi
+
 # Apply latest updates
 if [[ "$VARIANT_ID" == "silverblue" || "kinoite" ]]
    then

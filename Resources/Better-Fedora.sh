@@ -206,6 +206,7 @@ if [ $? -eq 0 ];
 fi
 
 # Set up templates
+echo "Creating new.txt template"
 touch ~/Templates/new.txt
 if [ $? -eq 0 ];
    then

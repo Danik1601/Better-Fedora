@@ -173,7 +173,6 @@ flatpak install flathub -y org.gnome.font-viewer &&
 # Install Flatpak apps
 echo "Installing Flatpak apps"
 flatpak install flathub -y com.google.Chrome &&
-flatpak install flathub -y com.parsecgaming.parsec &&
 flatpak install flathub -y com.anydesk.Anydesk &&
 flatpak install flathub -y com.transmissionbt.Transmission &&
 flatpak install flathub -y org.videolan.VLC &&
@@ -190,7 +189,8 @@ flatpak install flathub -y com.usebottles.bottles &&
 flatpak install flathub -y io.github.prateekmedia.appimagepool &&
 flatpak install flathub -y org.telegram.desktop &&
 flatpak install flathub -y com.visualstudio.code &&
-flatpak install flathub -y io.podman_desktop.PodmanDesktop
+flatpak install flathub -y io.podman_desktop.PodmanDesktop &&
+flatpak install flathub -y com.parsecgaming.parsec
 
 # Enable PWA support in Google Chrome
 echo "Enabling PWA support in Google Chrome"

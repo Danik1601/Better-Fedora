@@ -89,16 +89,6 @@ case $ID in
    ;;
 esac
 
-# Install "Dash to Dock" by @michele_g
-# busctl --user call org.gnome.Shell.Extensions /org/gnome/Shell/Extensions org.gnome.Shell.Extensions InstallRemoteExtension s dash-to-dock@micxgx.gmail.com
-# Disable "Dash to Dock" by @michele_g
-# sudo gnome-extensions disable "dash-to-dock@micxgx.gmail.com"
-
-# Install "Dash to Panel" by @charlesg99 and @jderose9
-# busctl --user call org.gnome.Shell.Extensions /org/gnome/Shell/Extensions org.gnome.Shell.Extensions InstallRemoteExtension s dash-to-panel@jderose9.github.com
-# Enable "Dash to Panel" by @charlesg99 and @jderose9
-# sudo gnome-extensions enable "dash-to-panel@jderose9.github.com"
-
 # Enable minimize and maximize buttons
 echo "Enabling minimize and maximize buttons"
 gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
@@ -108,6 +98,16 @@ if [ $? -eq 0 ];
    else
       echo "[✗] FAIL"
 fi
+
+# Install "Dash to Dock" by @michele_g
+# busctl --user call org.gnome.Shell.Extensions /org/gnome/Shell/Extensions org.gnome.Shell.Extensions InstallRemoteExtension s dash-to-dock@micxgx.gmail.com
+# Disable "Dash to Dock" by @michele_g
+# gnome-extensions disable "dash-to-dock@micxgx.gmail.com"
+
+# Install "Dash to Panel" by @charlesg99 and @jderose9
+busctl --user call org.gnome.Shell.Extensions /org/gnome/Shell/Extensions org.gnome.Shell.Extensions InstallRemoteExtension s dash-to-panel@jderose9.github.com
+Enable "Dash to Panel" by @charlesg99 and @jderose9
+gnome-extensions enable "dash-to-panel@jderose9.github.com"
 
 # Add Flathub repository:
 echo "Adding Flathub repository"

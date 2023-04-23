@@ -196,8 +196,8 @@ flatpak install flathub -y com.parsecgaming.parsec
 # Enable PWA support in Google Chrome
 echo "Enabling PWA support in Google Chrome"
 flatpak override --user \
-  --filesystem=~/.local/share/applications \
-  --filesystem=~/.local/share/icons \
+  --filesystem=~/.local/share/applications:create \
+  --filesystem=~/.local/share/icons:create \
  com.google.Chrome
 if [ $? -eq 0 ];
    then

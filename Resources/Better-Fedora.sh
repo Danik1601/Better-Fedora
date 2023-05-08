@@ -206,6 +206,16 @@ if [ $? -eq 0 ];
       echo "[✗] FAIL"
 fi
 
+# Set Google Chrome as the default web browser
+echo "Setting Google Chrome as the default web browser"
+xdg-settings set default-web-browser com.google.Chrome.desktop
+if [ $? -eq 0 ];
+   then
+      echo "[✓] SUCCESS"
+   else
+      echo "[✗] FAIL"
+fi
+
 # Set up templates
 echo "Creating new.txt template"
 touch ~/Templates/new.txt

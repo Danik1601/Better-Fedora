@@ -106,7 +106,7 @@ fi
 
 # Install "Dash to Panel" by @charlesg99 and @jderose9
 busctl --user call org.gnome.Shell.Extensions /org/gnome/Shell/Extensions org.gnome.Shell.Extensions InstallRemoteExtension s dash-to-panel@jderose9.github.com
-Enable "Dash to Panel" by @charlesg99 and @jderose9
+# Enable "Dash to Panel" by @charlesg99 and @jderose9
 gnome-extensions enable "dash-to-panel@jderose9.github.com"
 
 # Add Flathub repository:

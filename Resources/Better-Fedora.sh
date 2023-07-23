@@ -227,7 +227,7 @@ if [ $? -eq 0 ];
 fi
 
 # Apply latest updates
-if [[ "$VARIANT_ID" == "silverblue" || "kinoite" || "sericea"]]
+if [[ "$VARIANT_ID" == "silverblue" || "kinoite" || "onyx" || "sericea"]]
    then
       echo "Applying latest updates"
       sudo rpm-ostree update

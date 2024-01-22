@@ -198,16 +198,16 @@ echo "Installing Flatpak runtime extensions"
 flatpak install flathub -y org.freedesktop.Platform.VulkanLayer.MangoHud
 
 # Enable MangoHud for all Steam (Flatpak) games
-echo "Enabling MangoHud for all Steam (Flatpak) games"
-flatpak override --user \
-  --env=MANGOHUD=1 \
- com.valvesoftware.Steam
-if [ $? -eq 0 ];
-   then
-      echo "[✓] SUCCESS"
-   else
-      echo "[✗] FAIL"
-fi
+# echo "Enabling MangoHud for all Steam (Flatpak) games"
+# flatpak override --user \
+#   --env=MANGOHUD=1 \
+#  com.valvesoftware.Steam
+# if [ $? -eq 0 ];
+#    then
+#       echo "[✓] SUCCESS"
+#    else
+#       echo "[✗] FAIL"
+# fi
 
 # Enable PWA support in Google Chrome
 echo "Enabling PWA support in Google Chrome"

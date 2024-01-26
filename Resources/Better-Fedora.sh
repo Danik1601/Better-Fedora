@@ -194,8 +194,8 @@ flatpak install flathub -y io.podman_desktop.PodmanDesktop &&
 flatpak install flathub -y com.parsecgaming.parsec
 
 # Install Flatpak runtime extensions
-echo "Installing Flatpak runtime extensions"
-flatpak install flathub -y org.freedesktop.Platform.VulkanLayer.MangoHud
+# echo "Installing Flatpak runtime extensions"
+# flatpak install flathub -y org.freedesktop.Platform.VulkanLayer.MangoHud
 
 # Enable MangoHud for all Steam (Flatpak) games
 # echo "Enabling MangoHud for all Steam (Flatpak) games"
